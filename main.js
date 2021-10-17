@@ -127,13 +127,23 @@ const findFactorial = function (num) {
       //4
       //5
       //6
+      const maximumNumber = function (numbers) {
+        // TODO: Your code here
+        let result = Math.max(...numbers);
+        return result;
+      };
+      
+      maximumNumber([0, 5, 2, 10, 8, 6]); // => 10
+      maximumNumber([0, 5, 6]); // => 6
+
+
       //7
       const reversString = function (string) {
         // TODO: Your code here
         let split = string.split(""); //spilt sting into array
         let reversArr = split.reverse(); //revers array value
         let str = reversArr.join("");
-       console.log(str); 
+       return str; 
       };
       
       reversString("Hello"); // => "olleH"
