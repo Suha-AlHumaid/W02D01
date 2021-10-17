@@ -99,8 +99,43 @@ const findFactorial = function (num) {
         return  string.includes(character);
         // TODO: Your code here
        };
-       includeOf("Hello", "h"); // => false
-       includeOf("hello", "h"); // => true
-       includeOf("hello", "a"); // => false
-       includeOf("World", "r"); // => true
-       includeOf("World", "a"); // => false
+
+
+       const addToArray = function (array, string) {
+        // TODO: Your code here
+        array.push(string);
+        return array;
+      };
+      
+      addToArray(["Hello", "i", "am"], "John"); // => ["Hello", "i", "am", "John"]
+       
+      
+      //2
+      const convertToString = function (array) {
+        // TODO: Your code here
+        let str =array.join(" ");
+        return str;
+      };
+      
+      convertToString(["Hello", "i", "am", "John"]); // => "Hello i am John"
+      convertToString(["Hello", "John", "i", "am", "Jane"]); // => "Hello John i am Jane"
+
+
+
+      //3
+
+      //4
+      //5
+      //6
+      //7
+      const reversString = function (string) {
+        // TODO: Your code here
+        let split = string.split(""); //spilt sting into array
+        let reversArr = split.reverse(); //revers array value
+        let str = reversArr.join("");
+       console.log(str); 
+      };
+      
+      reversString("Hello"); // => "olleH"
+      reversString("John"); // => "nhoJ"
+  
