@@ -131,7 +131,20 @@ updateOrCreate([10, 20, 30], 3, 50); // => "there is no element to updated in th
 updateOrCreate([1, 2, 3], 0, 10); // => [10, 2, 3]
 updateOrCreate([1, 2, 3], 1, 10); // => [1, 10, 3]
 //4
-
+const onlyString = function (array) {
+  // TODO: Your code here
+  let newArray = [];
+for (let i=0 ; i< array.length; i++)
+{
+ if (typeof(array[i]) === typeof(""))
+ {
+   newArray.push(array[i]);
+ }
+}
+return newArray;
+};
+onlyString(["one",12,"hi",true , 88 , "12"]); // => ["one","hi","12"]
+onlyString([10, 20, 30, 40, 50, 60,false]); // => []
 //5
 
 //6
