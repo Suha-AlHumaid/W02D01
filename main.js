@@ -90,7 +90,8 @@ oneOrZero(); // => 0
 //8
 const randomRange = function (number) {
   // TODO: Your code here
-  return Math.random() * number;
+  let result = Math.random() * number;
+  return Math.round(result);
 };
 
 // 10 and 0 are included
