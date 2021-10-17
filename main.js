@@ -19,9 +19,6 @@ average(20, 5); // => 12.5
 average(10, 20); // => 15
 
 //3
-/*  
-   5! = 5 * 4 * 3 * 2 * 1
- */
 
 const findFactorial = function (num) {
   // YOUR CODE HERE
@@ -128,7 +125,7 @@ convertToString(["Hello", "John", "i", "am", "Jane"]); // => "Hello John i am Ja
 
 //3
 // the array values are unique, no duplicate values in the array
-const updateOrCreate = function (array, index, value) {
+const updateValue  = function (array, index, value) {
   // TODO: Your code here
   if (array.length <= index) {
     return "there is no element to updated in this index";
@@ -138,9 +135,10 @@ const updateOrCreate = function (array, index, value) {
   }
 };
 
-updateOrCreate([10, 20, 30], 3, 50); // => "there is no element to updated in this index"
-updateOrCreate([1, 2, 3], 0, 10); // => [10, 2, 3]
-updateOrCreate([1, 2, 3], 1, 10); // => [1, 10, 3]
+updateValue([10, 20, 30], 3, 50); // => "there is no element to updated in this index"
+updateValue([1, 2, 3], 0, 10); // => [10, 2, 3]
+updateValue([1, 2, 3], 1, 10); // => [1, 10, 3]
+
 //4
 const onlyString = function (array) {
   // TODO: Your code here
